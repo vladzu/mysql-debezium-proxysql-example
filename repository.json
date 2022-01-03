@@ -1,0 +1,8 @@
+{
+  "name": "debezium-proxysql-example",
+  "description": "Repo containing code to build sandbox for testing debezium and proxysql-mysql functionality",
+  "owner": "INFRA",
+  "type": "misc",
+  "status": "internal",
+  "region-type":"null"
+}
