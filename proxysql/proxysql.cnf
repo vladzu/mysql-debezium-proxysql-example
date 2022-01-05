@@ -31,6 +31,8 @@ mysql_variables=
     connect_retries_on_failure=10
     monitor_galera_healthcheck_timeout=1500
     set_query_lock_on_hostgroup=0
+    enable_client_deprecate_eof=0
+    enable_server_deprecate_eof=0
 }
 
 mysql_servers=({

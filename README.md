@@ -25,10 +25,11 @@ cd ../mysql1
 docker build -t vladzu/example-mysql-gtids1 .
 cd ../mysql2
 docker build -t vladzu/example-mysql-gtids2 .
+cd ..
 ```
 Start the components and register Debezium to stream changes from the database
 ```
-export DEBEZIUM_VERSION=1.4
+export DEBEZIUM_VERSION=1.7
 docker-compose up --build
 curl -i -X POST -H "Accept:application/json" -H "Content-Type:application/json" http://localhost:8083/connectors/ -d @register-mysql.json
 ```
